@@ -1,0 +1,28 @@
+days:
+  -
+    date: 2024-01-13
+    mocked_summary: "Good morning, Max! I hope you're feeling well-rested and ready for the day. Let's ease into your schedule for today:\n\nYou have a mix of professional and personal appointments today. Your day starts with a work meeting, followed by a personal appointment, and then a professional lunch. There's ample time between these appointments for travel and preparation.\n\nLet's delve into the details:\n\nIn your professional calendar:\n- Your day begins with a Scrum meeting on Teams from 09:00 to 09:30. This is a good opportunity to align with your team and plan the day's work.\n- Later in the day, you have a lunch with the CEO at the canteen. This is scheduled from 13:00 to 18:00. It's a long window, so it might be a good idea to confirm the exact timing.\n\nIn your personal calendar:\n- You have a doctor's appointment at the Castra Regina Center from 16:00 to 17:30. Remember to carry any necessary documents or reports with you.\n\nThere are no overlapping appointments today, which is great! You have a good amount of time between each appointment to prepare and travel.\n\nLooking at your notes from the previous days, I see that you had a good sleep and a positive conversation with your mother about window cleaning robots. It seems like you're considering buying one for her. On the work front, you had productive meetings with your team and your boss. These experiences could be helpful for your future interactions.\n\nThat's all for your briefing. Wishing you a smooth and successful day ahead!"
+    professional_calendar:
+      -
+        title: "Scrum meeting"
+        location: "Teams"
+        start: 09:00
+        end: 09:30
+      -
+        title: "Lunch with CEO"
+        location: "Canteen"
+        start: 13:00
+        end: 18:00
+    personal_calendar:
+      -
+        title: "Doctor"
+        location: "Castra Regina Center"
+        start: 16:00
+        end: 17:30
+    previous_day_notes: |
+      - # Private
+        - I slept well
+        - I talked to my mother about window cleaning robots. I want to by one for her.
+      - # Work
+        - I had a good meeting with my team.
+        - I had a good meeting with my boss.

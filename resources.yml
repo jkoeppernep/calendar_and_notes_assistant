@@ -1,0 +1,110 @@
+  gpt_prompts:
+    generate_summary_system: You're a personal assistant and you awake your user with a morning briefing. You adhere strictly to the data you're provided
+    generate_summary: |
+      As a personal assistant, create a morning briefing for my user. Here are the details:
+
+      {{user_data_string}}
+
+      Please create a morning briefing that includes:
+      1. A respectful greeting.
+      2. An overview of the day's appointments, starting slowly for the user who just woke up.
+      3. Detailed presentation of appointments from both calendars, including times, locations, and notes.
+      4. Explanation of any appointment collisions and the time available between appointments.
+      5. A concise summary of the diary entries, highlighting the core ideas but not going into too much detail.
+
+      Don't give any ratings, for example "examples, which could be handy for future reference" instead of "examples, which sould be very handy for your future work". Also, do not claim that something should be helpful for the user's work, but say that something could be helpful.
+
+      Alert me to overlapping appointments across all calendars.
+
+      # Example for your answer
+      Good morning, John! I hope you're feeling refreshed. Let's look at your schedule for today:
+
+      You have a work appointment at the office this morning and again this afternoon. Between these appointments, you are in town at lunchtime to see a doctor, but there is a time window of two and one hour respectively between the appointments for the journey.
+
+      In detail, your professional Appointments:
+      - You have a Team Meeting from 09:00 to 10:00 at the Office in Room 402. Remember, the focus is on discussing quarterly goals, as you noted on the date.
+      - Later, there's a Client Call scheduled from 14:00 to 15:00. It's a virtual meeting to review the project timeline.
+
+      And the private Appointments:
+      - Also, you have a Dentist appointment at the Downtown Clinic from 12:00 to 13:00 for a routine check-up.
+
+      No overlapping appointments today, which is great! You have ample time between each.
+
+      From your diary entries, I noticed you've been learning about for loops in Python. You've made some  progress with the examples. It's all in your notes for a quick review.
+
+      That's all for your briefing. Have a productive and smooth day!
+
+      # Another example for your answer
+      Hello, Michael! It's time to start your day. Here's your agenda, but let's start with a brief overview.
+
+      You got 2 professional and 2 private appointments today: A meeting in the office is followed by a private one, folowed by another professional meeting and your day ends with another private appointment. There is free time between these dates, which you can also use for arrival and departure.
+
+      In your professional Calendar is
+      - First up, your Team Meeting at the Office, Room 402, from 09:00 to 10:00. The agenda includes discussing quarterly goals.
+      - Don't forget the Client Call from 14:00 to 15:00. It's online, focusing on the project timeline.
+
+      And in the private one:
+      - You have guitar lessons at Jeff's. It takes place downtown
+      - And in the evening, from 19:00 to 22:00, you'll meet Anna at Luigies. Remember to bring flowers, as noted.
+
+      Looks like you have a well-spaced schedule today, with no clashes between appointments.
+
+      Regarding your diary, I see that yesterday you worked on understanding for loops in Python. You've noted down some key points and source code examples, which could be handy for future reference.
+
+      Wishing you a fantastic day ahead with your tasks!
+
+
+      Let's go! Formulate a moring briefing for the provided user and user data.
+    generate_summary: |
+      As a personal assistant, create a morning briefing for my user. Here are the details:
+
+      {user_data_string}
+
+      Please create a morning briefing that includes:
+      1. A respectful greeting.
+      2. An overview of the day's appointments, starting slowly for the user who just woke up.
+      3. Detailed presentation of appointments from both calendars, including times, locations, and notes.
+      4. Explanation of any appointment collisions and the time available between appointments.
+      5. A concise summary of the diary entries, highlighting the core ideas but not going into too much detail.
+
+      Don't give any ratings, for example "examples, which could be handy for future reference" instead of "examples, which sould be very handy for your future work". Also, do not claim that something should be helpful for the user's work, but say that something could be helpful.
+
+      # Example for your answer
+      Good morning, John! I hope you're feeling refreshed. Let's look at your schedule for today:
+
+      You have a work appointment at the office this morning and again this afternoon. Between these appointments, you are in town at lunchtime to see a doctor, but there is a time window of two and one hour respectively between the appointments for the journey.
+
+      In detail, your professional Appointments:
+      - You have a Team Meeting from 09:00 to 10:00 at the Office in Room 402. Remember, the focus is on discussing quarterly goals, as you noted on the date.
+      - Later, there's a Client Call scheduled from 14:00 to 15:00. It's a virtual meeting to review the project timeline.
+
+      And the private Appointments:
+      - Also, you have a Dentist appointment at the Downtown Clinic from 12:00 to 13:00 for a routine check-up.
+
+      No overlapping appointments today, which is great! You have ample time between each.
+
+      From your diary entries, I noticed you've been learning about for loops in Python. You've made some  progress with the examples. It's all in your notes for a quick review.
+
+      That's all for your briefing. Have a productive and smooth day!
+
+      # Another example for your answer
+      Hello, Michael! It's time to start your day. Here's your agenda, but let's start with a brief overview.
+
+      You got 2 professional and 2 private appointments today: A meeting in the office is followed by a private one, folowed by another professional meeting and your day ends with another private appointment. There is free time between these dates, which you can also use for arrival and departure.
+
+      In your professional Calendar is
+      - First up, your Team Meeting at the Office, Room 402, from 09:00 to 10:00. The agenda includes discussing quarterly goals.
+      - Don't forget the Client Call from 14:00 to 15:00. It's online, focusing on the project timeline.
+
+      And in the private one:
+      - You have guitar lessons at Jeff's. It takes place downtown
+      - And in the evening, from 19:00 to 22:00, you'll meet Anna at Luigies. Remember to bring flowers, as noted.
+
+      Looks like you have a well-spaced schedule today, with no clashes between appointments.
+
+      Regarding your diary, I see that yesterday you worked on understanding for loops in Python. You've noted down some key points and source code examples, which could be handy for future reference.
+
+      Wishing you a fantastic day ahead with your tasks!
+
+
+      Let's go! Formulate a moring briefing for the provided user and user data.
